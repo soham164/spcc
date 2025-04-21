@@ -1,0 +1,6 @@
+wcm:procedure(rate,start,finish);
+declare(cost,rate,start,finish);
+fixed binary(31)static;
+cost=rate+(start-finish)+2*rate*(start-finish-100);
+return(cost);
+end;
